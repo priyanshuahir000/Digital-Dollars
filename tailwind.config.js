@@ -34,10 +34,10 @@ export default {
         semiTransparentNavy: "#18172b2b",
       },
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        serif: ['Merriweather', 'serif'],
-      }
+        sans: ["Montserrat", "sans-serif"],
+        serif: ["Merriweather", "serif"],
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animated")],
 };

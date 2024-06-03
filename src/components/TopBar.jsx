@@ -1,8 +1,10 @@
+import { Number } from "./UI/Number";
+
 function TopBar() {
   return (
     <section className="mx-auto max-w-[2024px] lg:px-11 lg:py-6 xl:px-16">
       <div className="p-2 bg-purple-dark lg:rounded-md lg:shadow-[-6px_8px_0.6px_0_#0000001A] lg:p-0">
-        <div className="lg:flex lg:items-center lg:justify-center py-2 ">
+        <div className="lg:flex lg:items-center lg:justify-between 2xl:gap-5 py-2 ">
           <svg
             className="hidden xl:block"
             width="123"
@@ -49,19 +51,19 @@ function TopBar() {
               </linearGradient>
             </defs>
           </svg>
-          <div className="px-2 py-4 flex flex-grow justify-between flex-col gap-0 text-center text-white">
+          <div className="px-2 py-4 flex flex-grow justify-center flex-col gap-0 2xl:flex-row 2xl:gap-7 text-center  items-center text-white">
             <div
               className="flex flex-col md:flex-row md:gap-2 
-items-center justify-center"
+items-center"
             >
-              <p className="tracking-tight font-serif leading-none inline-block font-light italic text-[26px]">
+              <p className="tracking-tight inline-block  text-[26px] lg:text-[21px] 2xl:text-[26px] font-light leading-none md:leading-tight xl:tracking-tighter font-serif italic">
                 Introducing the
               </p>
-              <p className="tracking-tight font-sans leading-none inline-block font-extrabold text-[26px]">
-                Automated Bond Ladder
+              <p className="tracking-tight inline-block text-[26px] lg:text-[21px] 2xl:text-[26px] font-bold leading-none md:leading-tight lg:tracking-normal xl:tracking-tighter">
+                Automated Bond Ladder 
               </p>
             </div>
-            <p className="tracking-tight leading-none font-sans font-normal text-[14px] inline-block">
+            <p className="font-normal text-center tracking-tight leading-none lg:leading-normal lg:tracking-normal lg:font-semibold lg:text-[12px]">
               Take advantage of current rates with Treasuries, and skip state
               income taxes
               <a
