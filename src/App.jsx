@@ -5,6 +5,8 @@ import { Theme } from "@radix-ui/themes";
 import TopBar from "./components/TopBar";
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
+import Tabs from "./components/Tabs";
+import Sec1 from "./components/sections/Sec1";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <TopBar />
         <Navigation />
         <Hero />
+        <Tabs />
+        <Sec1 />
       </>
     </Theme>
   );
