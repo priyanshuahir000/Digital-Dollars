@@ -1,8 +1,8 @@
 function Tabs() {
   return (
     <div className="stick top-0 z-50 h-[75px] border-b-[1px] border-purple-dark border-opacity-40 hidden lg:block xl:h-[90px] text-purple-dark">
-      <nav className="grid h-full 2xl:grid-cols-[64px,auto,64px] 3xl:grid-cols-[auto,2024px,auto]">
-        <div className="grid border-opacity-40 border-purple-dark lg:grid-cols-4 2xl:col-start-2 2xl:border-l-[1px] [&>*]:border-r-[1px] [&>*]:border-opacity-40 lg:last:[&>*]:border-r-0 2xl:last:[&>*]:border-r-[1px]">
+      <nav className="grid h-full">
+        <div className="grid border-opacity-40 border-purple-dark lg:grid-cols-4 2xl:border-l-[1px] [&>*]:border-r-[1px] [&>*]:border-opacity-40 lg:last:[&>*]:border-r-0 2xl:last:[&>*]:border-r-[1px]">
           <button
             className={`relative overflow-hidden border-purple-dark border-opacity-40  hover:bg-gradient-to-b hover:from-lime hover:to-lightYellow`}
           >

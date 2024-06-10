@@ -7,9 +7,9 @@ function Hero() {
     <>
       <div className="relative overflow-hidden border-opacity-40 border-purple-dark border-y-[1px]">
         <div className="absolute -top-[90px] lg:-top-[75px] xl:-top-[90px]"></div>
-        <div className="grid 2xl:grid-cols-[64px,auto,64px] 3xl:grid-cols-[auto,2024px,auto]">
+        <div className="grid ">
           <div className="grid w-full grid-cols-1 lg:grid-cols-2 xl:col-start-2 sm:min-h-[900px] lg:min-h-[520px] 2xl:min-h-[570px] sm:h-[calc(100vh-96px-91px)] lg:h-[calc(100vh-96px-76px)] xl:h-[calc(100vh-96px-91px)]">
-            <div className="row-start-2 flex min-h-full items-center justify-center border-0 border-purple-dark border-opacity-40 px-6 py-10 md:px-28 lg:row-start-1 lg:border-r-[1px] lg:px-11 lg:py-0 2xl:border-x-[1px] 2xl:px-32 3xl:px-48">
+            <div className="row-start-2 flex min-h-full items-center justify-center border-0 border-purple-dark border-opacity-40 px-6 py-10 md:px-28 lg:row-start-1 lg:border-r-[1px] lg:px-11 lg:py-0 2xl:border-x-[1px] 2xl:px-12 3xl:px-16">
               <div className="flex w-full flex-col gap-y-8 2xl:min-w-[492px]">
                 <div className="space-y-4 md:space-y-6">
                   <div className="space-y-4">
