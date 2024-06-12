@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@radix-ui/themes": "^3.0.5",
+    "@uidotdev/usehooks": "^2.4.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "recoil": "^0.7.7"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

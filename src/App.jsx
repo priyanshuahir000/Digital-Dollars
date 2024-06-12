@@ -10,20 +10,23 @@ import Sec1 from "./components/sections/Sec1";
 import Sec2 from "./components/sections/Sec2";
 import Sec3 from "./components/sections/Sec3";
 import Sec4 from "./components/sections/Sec4";
+import { RecoilRoot } from "recoil";
 
 function App() {
   return (
     <Theme>
-      <>
-        <TopBar />
-        <Navigation />
-        <Hero />
-        <Tabs />
-        <Sec1 />
-        <Sec2 />
-        <Sec3 />
-        <Sec4 />
-      </>
+      <RecoilRoot>
+        <>
+          <TopBar />
+          <Navigation />
+          <Hero />
+          <Tabs />
+          <Sec1 />
+          <Sec2 />
+          <Sec3 />
+          <Sec4 />
+        </>
+      </RecoilRoot>
     </Theme>
   );
 }

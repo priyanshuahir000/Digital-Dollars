@@ -1,8 +1,15 @@
+import { Number } from "../UI/Number";
 import { PrimaryButton, SecondaryButton } from "../UI/buttons";
+import { useSetRecoilState } from "recoil";
+import { useEffect } from "react";
 
 function Sec1() {
+  
   return (
-    <div className="relative overflow-hidden border-purple-dark  border-opacity-40 border-t-[1px] text-purple-dark">
+    <div
+      id="sec1"
+      className="relative overflow-hidden border-purple-dark  border-opacity-40 border-t-[1px] text-purple-dark"
+    >
       <div className="absolute -top-[90px] lg:-top-[75px] xl:-top-[90px]" />
       <div className="grid  ">
         <div className="grid w-full grid-cols-1 lg:grid-cols-2 xl:col-start-2 min-h-[1050px] xs:min-h-[1000px] lg:min-h-[600px] 2xl:min-h-[700px] h-[calc(100vh-90px)] lg:h-[calc(100vh-75px)] xl:h-[calc(100vh-90px)]">
@@ -166,40 +173,7 @@ function Sec1() {
                               d="M57.3 36.731H46.72l4.86-4.86-1.234-1.226-6.956 6.956 6.956 6.956 1.226-1.226-4.852-4.86H57.3v-1.74z"
                               fill="#4840BB"
                             />
-                            <path
-                              d="M208.11 207.188a4.348 4.348 0 11-.001 8.695 4.348 4.348 0 01.001-8.695zm0-.543a4.891 4.891 0 100 9.783 4.891 4.891 0 000-9.783z"
-                              fill="#161338"
-                              fillOpacity=".6"
-                              fillRule="evenodd"
-                            />
-                            <path
-                              d="M208.653 209.362a.543.543 0 10-1.086 0 .543.543 0 001.086 0z"
-                              fill="#161338"
-                              fillOpacity=".6"
-                            />
-                            <path
-                              d="M208.11 214.253c.3 0 .543-.213.543-.476v-2.853c0-.262-.243-.475-.543-.475-.3 0-.544.213-.544.475v2.853c0 .263.244.476.544.476z"
-                              fill="#161338"
-                              fillOpacity=".6"
-                              fillRule="evenodd"
-                            />
-                            <path
-                              d="M168.866 172.41a4.347 4.347 0 110 8.695 4.348 4.348 0 010-8.695zm0-.543a4.89 4.89 0 10-.001 9.78 4.89 4.89 0 00.001-9.78z"
-                              fill="#161338"
-                              fillOpacity=".6"
-                              fillRule="evenodd"
-                            />
-                            <path
-                              d="M169.409 174.584a.544.544 0 10-1.087 0 .544.544 0 001.087 0z"
-                              fill="#161338"
-                              fillOpacity=".6"
-                            />
-                            <path
-                              d="M168.866 179.474c.3 0 .543-.213.543-.475v-2.853c0-.263-.243-.476-.543-.476-.3 0-.544.213-.544.476v2.853c0 .262.244.475.544.475z"
-                              fill="#161338"
-                              fillOpacity=".6"
-                              fillRule="evenodd"
-                            />
+
                             <path
                               d="M62.228 272.192c0-.4.324-.724.724-.724h13.042c.4 0 .725.324.725.724v7.97a.724.724 0 01-.725.725H62.952a.724.724 0 01-.724-.725v-7.97zm1.087 1.087c0 .4.324.725.724.725h10.868a.725.725 0 000-1.449H64.04c-.4 0-.724.324-.724.724zm.724 2.898c-.4 0-.724.325-.724.725v2.174c0 .4.324.724.724.724h10.868c.4 0 .725-.324.725-.724v-2.174c0-.4-.325-.725-.725-.725H64.04z"
                               fill="#4840BB"
@@ -257,7 +231,7 @@ function Sec1() {
                               fontWeight="bold"
                             >
                               <tspan x="46.867" y="157.994">
-                                $25,480.45
+                                ${<Number n={25480} type="tspan" />}
                               </tspan>
                             </text>
                             <text
@@ -269,7 +243,7 @@ function Sec1() {
                               fontWeight={700}
                             >
                               <tspan x="46.867" y="241.133">
-                                5.00%
+                                {<Number n={5.1} type="tspan" />}%
                               </tspan>
                             </text>
                             <text
@@ -299,7 +273,7 @@ function Sec1() {
                               fontWeight={700}
                             >
                               <tspan x="46.867" y="215.931">
-                                $968.26
+                                ${<Number n={968} type="tspan" />}
                               </tspan>
                             </text>
                             <text

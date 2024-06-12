@@ -1,5 +1,5 @@
 import { PrimaryButton, SecondaryButton } from "../UI/buttons";
-
+import { Number } from "../UI/Number";
 function Sec3() {
   return (
     <div className="relative overflow-hidden border-purple-dark  border-opacity-40 border-t-[1px] text-purple-dark">
@@ -184,40 +184,7 @@ function Sec3() {
                               d="M51.457 107.906a.859.859 0 011.488 0l2.976 5.154a.86.86 0 01-.744 1.289h-5.951a.86.86 0 01-.744-1.289l2.975-5.154z"
                               fill="#288067"
                             />
-                            <path
-                              d="M155.285 107.286a4.581 4.581 0 11.002 9.162 4.581 4.581 0 01-.002-9.162zm0-.573a5.155 5.155 0 10.001 10.31 5.155 5.155 0 00-.001-10.31z"
-                              fill="#161338"
-                              fillOpacity=".6"
-                              fillRule="evenodd"
-                            />
-                            <path
-                              d="M155.858 109.576a.572.572 0 10-1.144 0 .572.572 0 001.144 0z"
-                              fill="#161338"
-                              fillOpacity=".6"
-                            />
-                            <path
-                              d="M155.285 114.731c.317 0 .573-.225.573-.501v-3.007c0-.277-.256-.501-.573-.501-.316 0-.572.224-.572.501v3.007c0 .276.256.501.572.501z"
-                              fill="#161338"
-                              fillOpacity=".6"
-                              fillRule="evenodd"
-                            />
-                            <path
-                              d="M233.459 132.198a4.581 4.581 0 110 9.162 4.581 4.581 0 010-9.162zm0-.573a5.154 5.154 0 100 10.308 5.154 5.154 0 000-10.308z"
-                              fill="#161338"
-                              fillOpacity=".6"
-                              fillRule="evenodd"
-                            />
-                            <path
-                              d="M234.032 134.489a.573.573 0 10-1.146 0 .573.573 0 001.146 0z"
-                              fill="#161338"
-                              fillOpacity=".6"
-                            />
-                            <path
-                              d="M233.459 139.643c.316 0 .573-.225.573-.501v-3.007c0-.277-.257-.501-.573-.501-.316 0-.573.224-.573.501v3.007c0 .276.257.501.573.501z"
-                              fill="#161338"
-                              fillOpacity=".6"
-                              fillRule="evenodd"
-                            />
+
                             <path
                               d="M51.458 84.262a.859.859 0 011.488 0l2.975 5.154a.86.86 0 01-.744 1.289h-5.951a.859.859 0 01-.744-1.289l2.976-5.154z"
                               fill="#161338"
@@ -251,7 +218,7 @@ function Sec3() {
                               style={{ whiteSpace: "pre" }}
                               fill="#161338"
                               fontFamily="Montserrat"
-                              fontSize="16.322"
+                              fontSize="13.322"
                             >
                               <tspan x="96.052" y="115.78" />
                             </text>
@@ -260,9 +227,9 @@ function Sec3() {
                               fill="#161338"
                               fillOpacity=".6"
                               fontFamily="Montserrat"
-                              fontSize="16.322"
+                              fontSize="13.322"
                             >
-                              <tspan x="109.654" y="115.78">
+                              <tspan x="95.654" y="115.78">
                                 all time
                               </tspan>
                             </text>
@@ -270,18 +237,18 @@ function Sec3() {
                               style={{ whiteSpace: "pre" }}
                               fill="#288067"
                               fontFamily="Montserrat"
-                              fontSize="16.322"
+                              fontSize="13.322"
                               fontWeight={500}
                             >
                               <tspan x="59.073" y="115.78">
-                                35.4%
+                                {<Number n={35} type="tspan" />}%
                               </tspan>
                             </text>
                             <text
                               style={{ whiteSpace: "pre" }}
                               fill="#161338"
                               fontFamily="Montserrat"
-                              fontSize="16.322"
+                              fontSize="13.322"
                             >
                               <tspan x="79.353" y="140.692" />
                             </text>
@@ -290,7 +257,7 @@ function Sec3() {
                               fill="#161338"
                               fillOpacity=".6"
                               fontFamily="Montserrat"
-                              fontSize="16.322"
+                              fontSize="13.322"
                             >
                               <tspan x="90.955" y="140.692">
                                 estimated taxes saved
@@ -300,11 +267,11 @@ function Sec3() {
                               style={{ whiteSpace: "pre" }}
                               fill="#288067"
                               fontFamily="Montserrat"
-                              fontSize="16.322"
+                              fontSize="13.322"
                               fontWeight={500}
                             >
                               <tspan x="47.904" y="140.692">
-                                $579
+                                ${<Number n={579} type="tspan" />}
                               </tspan>
                             </text>
                             <text
@@ -315,7 +282,7 @@ function Sec3() {
                               fontWeight={700}
                             >
                               <tspan x="47.047" y="66.82">
-                                $98,656.00
+                                ${<Number n={98650} type="tspan" />}
                               </tspan>
                             </text>
                             <text
@@ -333,7 +300,7 @@ function Sec3() {
                               style={{ whiteSpace: "pre" }}
                               fill="#161338"
                               fontFamily="Montserrat"
-                              fontSize="16.322"
+                              fontSize="13.322"
                               fontWeight={500}
                             >
                               <tspan x="46.617" y="350.702">
@@ -358,7 +325,7 @@ function Sec3() {
                               style={{ whiteSpace: "pre" }}
                               fill="#161338"
                               fontFamily="Montserrat"
-                              fontSize="16.322"
+                              fontSize="13.322"
                               fontWeight={500}
                             >
                               <tspan x="46.617" y="430.755">
@@ -383,7 +350,7 @@ function Sec3() {
                               style={{ whiteSpace: "pre" }}
                               fill="#161338"
                               fontFamily="Montserrat"
-                              fontSize="16.322"
+                              fontSize="13.322"
                               fontWeight={500}
                             >
                               <tspan x="46.617" y="510.808">
@@ -408,7 +375,7 @@ function Sec3() {
                               style={{ whiteSpace: "pre" }}
                               fill="#161338"
                               fontFamily="Montserrat"
-                              fontSize="16.322"
+                              fontSize="13.322"
                               fontWeight={500}
                             >
                               <tspan x="46.617" y="590.861">
@@ -529,10 +496,10 @@ function Sec3() {
                                 style={{ whiteSpace: "pre" }}
                                 fill="#161338"
                                 fontFamily="Montserrat"
-                                fontSize="16.322"
+                                fontSize="13.322"
                               >
-                                <tspan x="261.82" y="350.702">
-                                  $33,829.32
+                                <tspan x="275.82" y="350.702">
+                                  ${<Number n={33829} type="tspan" />}
                                 </tspan>
                               </text>
                             </g>
@@ -546,7 +513,7 @@ function Sec3() {
                                 fontSize="12.886"
                               >
                                 <tspan x="293.38" y="371.852">
-                                  36.63%
+                                  {<Number n={36} type="tspan" />}%
                                 </tspan>
                               </text>
                               <path d="M284.687 365.259a.859.859 0 011.488 0l2.976 5.154a.859.859 0 01-.744 1.288h-5.952a.859.859 0 01-.744-1.288l2.976-5.154z" />
@@ -556,10 +523,10 @@ function Sec3() {
                                 style={{ whiteSpace: "pre" }}
                                 fill="#161338"
                                 fontFamily="Montserrat"
-                                fontSize="16.322"
+                                fontSize="13.322"
                               >
-                                <tspan x="260.672" y="430.755">
-                                  $29,963.36
+                                <tspan x="275.672" y="430.755">
+                                  ${<Number n={29633} type="tspan" />}
                                 </tspan>
                               </text>
                             </g>
@@ -573,7 +540,7 @@ function Sec3() {
                                 fontSize="12.886"
                               >
                                 <tspan x="293.557" y="451.905">
-                                  32.93%
+                                  {<Number n={32} type="tspan" />}%
                                 </tspan>
                               </text>
                               <path d="M286.404 445.312a.859.859 0 011.488 0l2.975 5.154a.859.859 0 01-.744 1.289h-5.951a.86.86 0 01-.744-1.289l2.976-5.154z" />
@@ -583,10 +550,10 @@ function Sec3() {
                                 style={{ whiteSpace: "pre" }}
                                 fill="#161338"
                                 fontFamily="Montserrat"
-                                fontSize="16.322"
+                                fontSize="13.322"
                               >
                                 <tspan x="283.29" y="510.809">
-                                  $10,130
+                                  ${<Number n={10130} type="tspan" />}
                                 </tspan>
                               </text>
                             </g>
@@ -601,7 +568,7 @@ function Sec3() {
                                 fontSize="12.886"
                               >
                                 <tspan x="307.883" y="531.958">
-                                  3.1%
+                                  ${<Number n={3} type="tspan" />}
                                 </tspan>
                               </text>
                               <path d="M300.777 531.378a.86.86 0 01-1.488 0l-2.976-5.155a.86.86 0 01.744-1.288h5.952a.86.86 0 01.744 1.288l-2.976 5.155z" />
@@ -611,10 +578,10 @@ function Sec3() {
                                 style={{ whiteSpace: "pre" }}
                                 fill="#161338"
                                 fontFamily="Montserrat"
-                                fontSize="16.322"
+                                fontSize="13.322"
                               >
                                 <tspan x="288.916" y="590.861">
-                                  $6,130
+                                  ${<Number n={6130} type="tspan" />}
                                 </tspan>
                               </text>
                             </g>

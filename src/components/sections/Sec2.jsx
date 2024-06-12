@@ -1,8 +1,12 @@
+import { Number } from "../UI/Number";
 import { PrimaryButton, SecondaryButton } from "../UI/buttons";
+import { useSetRecoilState } from "recoil";
+import { useEffect } from "react";
 
 function Sec2() {
+
   return (
-    <div className="relative overflow-hidden border-purple-dark  border-opacity-40 border-t-[1px] text-purple-dark">
+    <div id="sec2" className="relative overflow-hidden border-purple-dark  border-opacity-40 border-t-[1px] text-purple-dark">
       <div className="absolute -top-[90px] lg:-top-[75px] xl:-top-[90px]" />
       <div className="grid  ">
         <div className="grid w-full grid-cols-1 lg:grid-cols-2 xl:col-start-2 min-h-[1050px] xs:min-h-[1000px] lg:min-h-[600px] 2xl:min-h-[700px] h-[calc(100vh-90px)] lg:h-[calc(100vh-75px)] xl:h-[calc(100vh-90px)]">
@@ -174,7 +178,8 @@ function Sec2() {
                           fontStretch="condensed"
                         >
                           <tspan x="42.867" y="147.994">
-                            $99,123.00
+                          ${<Number n={99123} type="tspan" />}
+
                           </tspan>
                         </text>
                         <path
