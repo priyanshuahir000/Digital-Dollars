@@ -10,7 +10,7 @@ function Tabs() {
         <div className="grid border-opacity-40 border-purple-dark lg:grid-cols-4 2xl:border-l-[1px] [&>*]:border-r-[1px] [&>*]:border-opacity-40 lg:last:[&>*]:border-r-0 2xl:last:[&>*]:border-r-[1px]">
           <button
             className={`relative overflow-hidden border-purple-dark border-opacity-40  hover:bg-gradient-to-b hover:from-lime hover:to-lightYellow`}
-            onClick={() => setScroll({ top: 800, left: 0, behavior: "smooth" })}
+            onClick={() => setScroll({ top: 760, left: 0, behavior: "smooth" })}
           >
             <div className="relative px-4 text-left 2xl:px-6 2xl:py-4">
               <p className="uppercase font-medium text-[11px] xl:text-[11px] 2xl:text-[12px]">
@@ -22,7 +22,7 @@ function Tabs() {
             </div>
             {y >= 750 && y < 1360 && (
               <div
-                className={`absolute top-0 flex h-full w-full flex-col bg-gradient-to-b from-lime to-lightYellow`}
+                className={`fade-in absolute top-0 flex h-full w-full flex-col bg-gradient-to-b from-lime to-lightYellow`}
               >
                 <div className="flex h-full w-full flex-col justify-center px-4 text-left 2xl:px-6 2xl:py-4">
                   <p className="uppercase font-medium text-[11px] xl:text-[11px] 2xl:text-[12px]">
@@ -49,9 +49,9 @@ function Tabs() {
                 Automated Bond Ladder
               </p>
             </div>
-            {y >= 1360 && y < 1975 && (
+            {y >= 1360 && y < 1974 && (
               <div
-                className={`absolute top-0 flex h-full w-full flex-col bg-gradient-to-b from-dawnPink to-blueChalk`}
+                className={`fade-in absolute top-0 flex h-full w-full flex-col bg-gradient-to-b from-dawnPink to-blueChalk`}
               >
                 <div className="flex h-full w-full flex-col justify-center px-4 text-left 2xl:px-6 2xl:py-4">
                   <p className="uppercase font-medium text-[11px] xl:text-[11px] 2xl:text-[12px]">
@@ -78,9 +78,9 @@ function Tabs() {
                 Automated Investing Account
               </p>
             </div>
-            {y >= 1975 && y < 2560 && (
+            {y >= 1974 && y < 2560 && (
               <div
-                className={`absolute top-0 flex h-full w-full flex-col bg-gradient-to-b from-tealBlue to-reddishOrange`}
+                className={`fade-in absolute top-0 flex h-full w-full flex-col bg-gradient-to-b from-tealBlue to-reddishOrange`}
               >
                 <div className="flex h-full w-full flex-col justify-center px-4 text-left 2xl:px-6 2xl:py-4">
                   <p className="uppercase font-medium text-[11px] xl:text-[11px] 2xl:text-[12px]">
@@ -107,9 +107,9 @@ function Tabs() {
                 Stock Investing Account
               </p>
             </div>
-            {y >= 2560 && (
+            {y >= 2560 && y <= 3300 && (
               <div
-                className={`absolute top-0 flex h-full w-full flex-col bg-gradient-to-b from-violentViolet to-bluePurple text-white`}
+                className={`fade-in fade-out absolute top-0 flex h-full w-full flex-col bg-gradient-to-b from-violentViolet to-bluePurple text-white`}
               >
                 <div className="flex h-full w-full flex-col justify-center px-4 text-left 2xl:px-6 2xl:py-4">
                   <p className="uppercase font-medium text-[11px] xl:text-[11px] 2xl:text-[12px]">

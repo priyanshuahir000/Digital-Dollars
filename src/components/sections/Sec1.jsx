@@ -1,10 +1,8 @@
 import { Number } from "../UI/Number";
 import { PrimaryButton, SecondaryButton } from "../UI/buttons";
-import { useSetRecoilState } from "recoil";
-import { useEffect } from "react";
+
 
 function Sec1() {
-  
   return (
     <div
       id="sec1"
@@ -145,9 +143,9 @@ function Sec1() {
               </div>
             </div>
           </div>
-          <div className="row-start-1 h-full min-h-[350px] w-full overflow-hidden border-b-[1px] border-purple-dark border-opacity-40 lg:border-b-0 2xl:border-r-[1px]">
+          <div className=" row-start-1 h-full min-h-[350px] w-full overflow-hidden border-b-[1px] border-purple-dark border-opacity-40 lg:border-b-0 2xl:border-r-[1px]">
             <div className="relative h-full w-full bg-gradient-to-b from-lime to-lightYellow">
-              <div className="absolute left-1/2 top-8 -translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2">
+              <div className=" absolute left-1/2 top-8 -translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2">
                 <div style={{ opacity: 1, transform: "none" }}>
                   <div
                     className="aspect-[318/632] top-1/2 -translate-y-[48%] left-1/2 -translate-x-[55%] w-[90%] h-[95%] absolute rounded-3xl bg-[rgba(0,0,0,0.1)] blur-[0.72222px]"

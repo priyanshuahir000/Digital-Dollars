@@ -332,7 +332,7 @@ function Sec4() {
                         <p className="text-sm font-medium">Trending Stocks</p>
                         <p className="max-w-[190px] text-xs font-normal text-content-primary/60 lg:max-w-[230px] 2xl:text-[10px]">
                           These are the stocks that are most held by people at
-                          Wealthfront.
+                          Digital Dollars.
                         </p>
                       </div>
                       <p className="text-sm pt-1 pr-1 font-medium text-bluePurple lg:text-xs">

@@ -17,8 +17,8 @@ function Navigation() {
           <div className="flex h-24 justify-between items-center">
             <a href="/">
               <img
-                src="/logo.svg"
-                width="200"
+                src="/logo-purple.png"
+                width="250"
                 height="26"
                 alt="Digital Dollars Logo"
                 loading="eager"
@@ -42,7 +42,7 @@ function Navigation() {
         <div className="static left-0 right-0 px-6 py-6 flex justify-between items-center md:static md:px-0">
           <a href="/">
             <img
-              src="/logo.svg"
+              src="./logo-white.png"
               width="200"
               height="26"
               alt="Digital Dollars Logo"

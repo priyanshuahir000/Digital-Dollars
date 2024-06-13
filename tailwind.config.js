@@ -32,6 +32,7 @@ export default {
         semiTransparentPurple: "#230b5966",
         semiTransparentIndigo: "#230b5999",
         semiTransparentNavy: "#18172b2b",
+        lightLime: "#E8F4DF",
         lime: "#d9edca",
         lightYellow: "#fff3d6",
         dawnPink: "#f7eae4",

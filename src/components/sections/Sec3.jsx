@@ -103,7 +103,7 @@ function Sec3() {
                       <div className="copy-body">
                         <a
                           className="z-10 relative underline"
-                          href="/tax-loss-harvesting"
+                          
                         >
                           Tax-Loss Harvesting
                         </a>{" "}

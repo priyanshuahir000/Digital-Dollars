@@ -391,7 +391,7 @@ function Hero() {
                             letterSpacing="0em"
                           >
                             <tspan x="79.7173" y="411.236">
-                              Wealthfront Cash Account
+                              Digital Dollars Cash Account
                             </tspan>
                           </text>
                           <line
@@ -538,7 +538,7 @@ function Hero() {
                             letterSpacing="0em"
                           >
                             <tspan x="79.7173" y="622.922">
-                              Wealthfront · Individual
+                              Digital Dollars · Individual
                             </tspan>
                           </text>
                           <g filter="url(#444d4e50e5075c035408f0bbede45d25)">
@@ -749,7 +749,7 @@ function Hero() {
                             <div>
                               <p className="font-medium">Emergency fund</p>
                               <p className="text-xs font-sans leading-small">
-                                Wealthfront · Individual
+                                Digital Dollars · Individual
                               </p>
                             </div>
                           </div>
