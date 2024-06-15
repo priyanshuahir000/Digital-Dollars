@@ -1,4 +1,4 @@
-import { PrimaryButton, SecondaryButton } from "./UI/buttons";
+import { SecondaryButton } from "./UI/buttons";
 
 export function Testimonial() {
   return (

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import  { useRef, useState, useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web";
 
 export function Number({ n, type }) {

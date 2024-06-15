@@ -1,6 +1,5 @@
 import { Number } from "./UI/Number";
 import { SecondaryButton } from "./UI/buttons";
-import { animated } from "@react-spring/web";
 
 function Hero() {
   return (
