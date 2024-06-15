@@ -47,6 +47,5 @@ export default {
         serif: ["Merriweather", "serif"],
       },
     },
-  },
-  plugins: [require("tailwindcss-animated")],
+  }
 };
