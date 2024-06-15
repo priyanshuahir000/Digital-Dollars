@@ -28,7 +28,7 @@ export function RiskSection() {
                 <h3 className="font-black text-[30px]">High-yield savings</h3>
                 <p className="text-lg leading-tight max-w-[325px]">
                   Best for your daily expenses and your emergency fund, until
-                  you're ready to invest.
+                  youre ready to invest.
                 </p>
                 <a className="z-10 relative font-medium underline text-purple-dark">
                   Learn more

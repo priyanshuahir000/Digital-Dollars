@@ -1,5 +1,5 @@
+import { Inset, Popover } from "@radix-ui/themes";
 import "./buttons.css";
-import { forwardRef } from "react";
 
 function PrimaryButton(props) {
   return (
@@ -29,7 +29,7 @@ function SecondaryButton(props) {
 
 function LinkButton(props) {
   return (
-    <a role="button" className="group relative">
+    <a role="button" className="group relative font-medium">
       {props.text}
       <div className="absolute left-0 right-0 -bottom-0.5 h-0.5 w-0 transition-all bg-purple-dark group-hover:w-full"></div>
     </a>
@@ -48,10 +48,12 @@ function LinkButtonBold(props) {
   );
 }
 
-const DropDownButton = forwardRef(({ text, ...props }, ref) => {
+function DropDownButton(props) {
   return (
+    <Popover.Root>
+    <Popover.Trigger>
     <a className="group relative font-medium">
-      {text}
+      {props.text}
       <svg
         fill="none"
         viewBox="0 0 9 6"
@@ -67,8 +69,39 @@ const DropDownButton = forwardRef(({ text, ...props }, ref) => {
       </svg>
       <div className="absolute left-0 right-0 -bottom-0.5 h-0.5 w-0 transition-all bg-purple-dark group-hover:w-full"></div>
     </a>
+    </Popover.Trigger>
+    <Popover.Content width={"1000px"} size="4">
+      <Inset>
+      <div className="filter-shadow flex items-stretch justify-center overflow-hidden rounded-xl bg-white font-medium text-purple-dark">
+        <div className="flex-grow  py-9 px-4">
+          <a>
+            <div className="group flex items-center justify-center rounded p-1  text-left">
+            <div className="mr-4  flex-shrink-0 flex-grow-0 transition-transform group-hover:scale-110">
+              <img src={props.image} alt="Automated Bond Ladder" width={90} />
+            </div>
+            <div className="max-w-[300px] flex-grow">
+              
+            <div className="group relative inline-block text-xl font-bold text-purple-dark">
+            {props.innerHeading}
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 w-0 bg-purple-dark transition-all group-hover:w-full"></div>
+            <div className="pointer-events-none absolute -bottom-0.5 -right-4 font-serif">↗</div>
+            </div>
+
+            <div className="font-normal">{props.content}</div>
+            </div>
+            
+            </div>
+            
+          </a>
+         
+        </div>
+        
+        </div>
+      </Inset>
+    </Popover.Content>
+    </Popover.Root>
   );
-});
+}
 
 export {
   PrimaryButton,

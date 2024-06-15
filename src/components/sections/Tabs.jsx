@@ -1,16 +1,14 @@
-import { useRecoilValue } from "recoil";
-import { useEffect } from "react";
 import { useWindowScroll } from "@uidotdev/usehooks";
 
 function Tabs() {
   const [{ x, y }, setScroll] = useWindowScroll();
   return (
-    <div className="sticky top-0 z-50 h-[75px] border-b-[1px] border-purple-dark border-opacity-40 hidden lg:block xl:h-[90px] text-purple-dark bg-white">
+    <div className={`${y<3670 ? "sticky": ""} top-0 z-50 h-[75px] border-b-[1px] border-purple-dark border-opacity-40 hidden lg:block xl:h-[90px] text-purple-dark bg-white`}>
       <nav className="grid h-full">
         <div className="grid border-opacity-40 border-purple-dark lg:grid-cols-4 2xl:border-l-[1px] [&>*]:border-r-[1px] [&>*]:border-opacity-40 lg:last:[&>*]:border-r-0 2xl:last:[&>*]:border-r-[1px]">
           <button
             className={`relative overflow-hidden border-purple-dark border-opacity-40  hover:bg-gradient-to-b hover:from-lime hover:to-lightYellow`}
-            onClick={() => setScroll({ top: 760, left: 0, behavior: "smooth" })}
+            onClick={() => setScroll({ top: 800, left: 0, behavior: "smooth" })}
           >
             <div className="relative px-4 text-left 2xl:px-6 2xl:py-4">
               <p className="uppercase font-medium text-[11px] xl:text-[11px] 2xl:text-[12px]">
@@ -20,7 +18,7 @@ function Tabs() {
                 Cash Account
               </p>
             </div>
-            {y >= 750 && y < 1360 && (
+            {y >= 800 && y < 1500 && (
               <div
                 className={`fade-in absolute top-0 flex h-full w-full flex-col bg-gradient-to-b from-lime to-lightYellow`}
               >
@@ -38,7 +36,7 @@ function Tabs() {
           <button
             className={`relative overflow-hidden border-purple-dark border-opacity-40  hover:bg-gradient-to-b hover:from-dawnPink hover:to-blueChalk `}
             onClick={() =>
-              setScroll({ top: 1360, left: 0, behavior: "smooth" })
+              setScroll({ top: 1500, left: 0, behavior: "smooth" })
             }
           >
             <div className="relative px-4 text-left 2xl:px-6 2xl:py-4">
@@ -49,7 +47,7 @@ function Tabs() {
                 Automated Bond Ladder
               </p>
             </div>
-            {y >= 1360 && y < 1974 && (
+            {y >= 1500 && y < 2200 && (
               <div
                 className={`fade-in absolute top-0 flex h-full w-full flex-col bg-gradient-to-b from-dawnPink to-blueChalk`}
               >
@@ -67,7 +65,7 @@ function Tabs() {
           <button
             className={`relative overflow-hidden border-purple-dark border-opacity-40  hover:bg-gradient-to-b hover:from-tealBlue hover:to-reddishOrange `}
             onClick={() =>
-              setScroll({ top: 1975, left: 0, behavior: "smooth" })
+              setScroll({ top: 2200, left: 0, behavior: "smooth" })
             }
           >
             <div className="relative px-4 text-left 2xl:px-6 2xl:py-4">
@@ -78,7 +76,7 @@ function Tabs() {
                 Automated Investing Account
               </p>
             </div>
-            {y >= 1974 && y < 2560 && (
+            {y >= 2200 && y < 2900 && (
               <div
                 className={`fade-in absolute top-0 flex h-full w-full flex-col bg-gradient-to-b from-tealBlue to-reddishOrange`}
               >
@@ -96,7 +94,7 @@ function Tabs() {
           <button
             className={`relative overflow-hidden border-purple-dark border-opacity-40  hover:bg-gradient-to-b hover:from-violentViolet hover:to-bluePurple hover:text-white `}
             onClick={() =>
-              setScroll({ top: 2560, left: 0, behavior: "smooth" })
+              setScroll({ top: 2900, left: 0, behavior: "smooth" })
             }
           >
             <div className="relative px-4 text-left 2xl:px-6 2xl:py-4">
@@ -107,7 +105,7 @@ function Tabs() {
                 Stock Investing Account
               </p>
             </div>
-            {y >= 2560 && y <= 3300 && (
+            {y >= 2900 && y <= 3600 && (
               <div
                 className={`fade-in fade-out absolute top-0 flex h-full w-full flex-col bg-gradient-to-b from-violentViolet to-bluePurple text-white`}
               >
