@@ -593,11 +593,7 @@ function Hero() {
                             width={1}
                             height={1}
                           >
-                            <use
-                              href="#image0_361_25531"
-                              xlinkHref="#image0_361_25531"
-                              transform="scale(0.005)"
-                            />
+                            <use xlink="true" transform="scale(0.005)" />
                           </pattern>
                           <filter
                             id="444d4e50e5075c035408f0bbede45d25"
@@ -698,7 +694,6 @@ function Hero() {
                             id="image0_361_25531"
                             width={200}
                             height={200}
-                            href="/next/contenthash/next/optimized/portfolio-icon-long-term-investing.contenthash.dd8044b4ecb7ceb9354b58a20709d6073a9adc6f.png"
                           />
                         </defs>
                       </svg>

@@ -157,12 +157,12 @@ function Sec4() {
                       />
                     </div>
                     <div
-                      className="flex space-x-2 px-2 lg:px-4"
+                      className="flex space-x-5 px-2 lg:px-4"
                       style={{
                         transform: "translateX(-492px) translateZ(0px)",
                       }}
                     >
-                      <div className="mb-4 w-[220px] shrink-0 rounded-2xl bg-white px-4 py-3 shadow-[0px_6px_34px_rgba(0,0,0,0.1)] md:w-[240px] 2xl:space-y-1">
+                      <div className="mb-4 w-[220px] shrink-0 rounded-2xl bg-white px-4 py-3 shadow-[0px_6px_34px_rgba(0,0,0,0.1)] md:w-[240px] 2xl:space-y-1 ">
                         <p className="text-lg font-medium leading-5 lg:text-[19px]">
                           Streaming
                         </p>
@@ -273,7 +273,7 @@ function Sec4() {
                           </p>
                         </div>
                       </div>
-                      <div className="mb-4 w-[220px] shrink-0 rounded-2xl bg-white px-4 py-3 shadow-[0px_6px_34px_rgba(0,0,0,0.1)] md:w-[240px] 2xl:space-y-1">
+                      <div className="mb-4 w-[240px] shrink-0 rounded-2xl bg-white px-4 py-3 shadow-[0px_6px_34px_rgba(0,0,0,0.1)] md:w-[240px] 2xl:space-y-1 ">
                         <p className="text-lg font-medium leading-5 lg:text-[16px]">
                           Transformative Hardware Tech
                         </p>

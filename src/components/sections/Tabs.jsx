@@ -3,7 +3,9 @@ import { useWindowScroll } from "@uidotdev/usehooks";
 function Tabs() {
   const [{ x, y }, setScroll] = useWindowScroll();
   return (
-    <div className={`${y<3670 ? "sticky": ""} top-0 z-50 h-[75px] border-b-[1px] border-purple-dark border-opacity-40 hidden lg:block xl:h-[90px] text-purple-dark bg-white`}>
+    <div
+      className={`${y < 3670 ? "sticky" : ""} top-0 z-50 h-[75px] border-b-[1px] border-purple-dark border-opacity-40 hidden lg:block xl:h-[90px] text-purple-dark bg-white`}
+    >
       <nav className="grid h-full">
         <div className="grid border-opacity-40 border-purple-dark lg:grid-cols-4 2xl:border-l-[1px] [&>*]:border-r-[1px] [&>*]:border-opacity-40 lg:last:[&>*]:border-r-0 2xl:last:[&>*]:border-r-[1px]">
           <button
